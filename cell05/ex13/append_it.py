@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+import sys
+
+if len(sys.argv) <= 1:
+    print("none")
+else:
+    for param in sys.argv[1:]:
+        if not param.endswith("ism"):
+            print(f"{param}ism")
+
+# Example test commands in terminal:
+# ./cell05/ex13/append_it.py
+# ./cell05/ex13/append_it.py "parallel" "egoism" "human"
